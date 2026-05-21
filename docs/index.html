@@ -1,17 +1,68 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>Projetos Scratch</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Projetos</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <h1>Meus Projetos</h1>
+  <div class="container">
 
-  <ul>
-    <li><a href="projeto1/">Projeto 1</a></li>
-    <li><a href="projeto2/">Projeto 2</a></li>
-    <li><a href="projeto3/">Projeto 3</a></li>
-  </ul>
+    <!-- MENU -->
+    <aside class="sidebar">
+      <h1>Projetos</h1>
 
+      <button class="menu-item active" data-project="projeto1">
+        Projeto 1
+      </button>
+
+      <button class="menu-item" data-project="projeto2">
+        Projeto 2
+      </button>
+
+      <button class="menu-item" data-project="projeto3">
+        Projeto 3
+      </button>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="content">
+
+      <section class="project active" id="projeto1">
+        <h2>Projeto 1</h2>
+        <p>Descrição do primeiro projeto.</p>
+
+        <a href="#" target="_blank">
+          Abrir projeto
+        </a>
+      </section>
+
+      <section class="project" id="projeto2">
+        <h2>Projeto 2</h2>
+        <p>Descrição do segundo projeto.</p>
+
+        <a href="#" target="_blank">
+          Abrir projeto
+        </a>
+      </section>
+
+      <section class="project" id="projeto3">
+        <h2>Projeto 3</h2>
+        <p>Descrição do terceiro projeto.</p>
+
+        <a href="#" target="_blank">
+          Abrir projeto
+        </a>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
